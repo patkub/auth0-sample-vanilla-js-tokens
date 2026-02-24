@@ -1,5 +1,10 @@
 import { createAuth0Client } from '@auth0/auth0-spa-js';
 
+// highlight.js
+import hljs from 'highlight.js/lib/core';
+import json from 'highlight.js/lib/languages/json';
+hljs.registerLanguage('json', json);
+
 // DOM elements
 const loading = document.getElementById('loading');
 const error = document.getElementById('error');
